@@ -23,7 +23,7 @@ const app = new Elysia()
         setTimeout(() => {
           clearInterval(interval);
           stream.close();
-        }, 30000);
+        }, 3000);
       })
   )
   .get("/files", async () => {
