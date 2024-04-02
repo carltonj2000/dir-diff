@@ -1,0 +1,19 @@
+{
+  "name": "dir-diff",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev:client": "cd waku-client1; bun run dev",
+    "dev:server": "cd elysia-server1; bun run dev",
+    "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\""
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
